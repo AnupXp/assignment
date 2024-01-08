@@ -4,7 +4,7 @@
 }
 body{
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     font-family: 'Inter', sans-serif;
     font-family: 'Merriweather', serif;
 }
@@ -13,20 +13,18 @@ body{
 .banner-container{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.779), rgba(7, 2, 17, 0.00) 100%), url('../resources/banner.png');
     border-radius: 16px;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 1320px;
-    height: 600px;
     margin: 50px 110px 0 110px;
 }
-div>h3{
+.banner-container h3{
     color: #FFF;
-    font-family: Merriweather;
     text-align: center;
     font-size: 32px;
     font-weight: 400;
     padding: 175px 530px 0 530px;
 }
-div>h1{
+.banner-container h1{
     color: #FFF;
     text-align: center;
     font-family: Merriweather;
@@ -39,13 +37,13 @@ div>h1{
 .text-content{
     text-align: center;
 }
-.text-content>h2{
+.text-content h2{
     color: #F00;
     font-size: 88px;
     font-weight: 700;
     margin-top: 120px;
 }
-.text-content>p{
+.text-content p{
     color: #F00;
     font-size: 24px;
     font-weight: 500;
@@ -53,44 +51,46 @@ div>h1{
     margin-bottom: 15px;
     padding: 0;
 }
-.text-content>h3{
+.text-content h3{
     color: #070211;
     font-size: 48px;
     font-weight: 700;
     margin-top: 0;
     padding: 0;
 }
-div>img{
+.text-content img{
     margin-top: 50px;
     width: 800px;
     height: 500px;
 }
-.main-sec-banner{
-    background-image: url('../resources/Vectorrr.png');
-    fill: linear-gradient(to right, #000000 50%, rgba(7, 2, 17, 0.00) 100%);
+#main-sec-banner{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.881), rgba(7, 2, 17, 0.00) 100%), url('../resources/Vectorrr.png');
     background-repeat: no-repeat;
-    border-radius: 16px;
-    width: 1320px;
+    background-size: cover;
     height: 600px;
-    margin: 120px 110px 0 110px;
-    padding: 125px 550px 0 125px;
+    border-radius: 16px;
+    margin: 120px 110px;
 }
-.main-sec-banner>h2{
+#main-sec-banner .banner-text>h2{
     color: #FFF;
     font-size: 64px;
     font-weight: 900;
-    line-height: 88px;
     letter-spacing: 7px;
-    padding-right: 550px;
+    line-height: 85px;
+    width: 645px;
+    margin: 125px 55px 25px 125px;
 }
-.main-sec-banner>p{
+#main-sec-banner .banner-text>p{
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
     font-weight: 400;
-    margin-top: 25px;
     margin-bottom: 50px;
+    padding: 0 40px 0 125px;
+    width: 700px;
 }
-.main-sec-banner>button{
+#main-sec-banner .banner-text>button{
     color: #FFF;
     background-color: transparent;
     text-align: center;
@@ -98,26 +98,28 @@ div>img{
     font-weight: 700;
     text-transform: uppercase;
     border: none;
-    padding-left: 20px;
+    padding: 0 0 140px 160px;
 }
-.time-date{
+#main-sec-banner .img-ban{
+    padding: 70px 140px 70px 0;
+}
+#time-date{
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
-    height: 480px;
-    width: 620px;
+    background-size: cover;
     margin: 0px 110px;
     text-align: center;
     padding: 100px 350px 0 350px;
 }
-.time-date>p{
+#time-date p{
     color: #070211;
     font-size: 32px;
     font-weight: 600;
     text-transform: capitalize;
 }
-.loc{
+#time-date .loc{
     color: #F00;
 }
-.time-date>button{
+#time-date button{
     color: #FFF;
     background-color: #FF0000;
     text-align: center;
@@ -128,35 +130,4 @@ div>img{
     margin: 50px 0 110px 0;
     padding: 16px 32px;
     border-radius: 5px;
-}
-.division{
-    display: flex;
-    margin: 0px 110px;
-    width: 1500px;
-}
-.district>h5{
-    color: #F00;
-    font-size: 24px;
-    font-weight: 500;
-    padding-top: 100px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.district>h2{
-    color: #070211;
-    font-size: 48px;
-    font-weight: 900;
-    text-transform: capitalize;
-    margin-top: 0;
-}
-.district>p{
-    color: rgba(7, 2, 17, 0.60);
-    font-size: 20px;
-    font-weight: 400;
-    width: 390px;
-    text-align: justify;
-}
-.p-station{
-    height: 100px;
-    width: 100px;
 }
