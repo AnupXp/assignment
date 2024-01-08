@@ -119,7 +119,7 @@ body{
     font-weight: 600;
     text-transform: capitalize;
 }
-#time-date .loc{
+#time-date .primary , .only-text span{
     color: #F00;
 }
 #time-date button{
@@ -186,4 +186,29 @@ body{
     height: 140px;
     width: 140px;
     padding: 0 135px 0 120px;
+}
+.only-text{
+    text-align: center;
+}
+.only-text h4{
+    color: #070211;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.only-text h1{
+     color: #070211;
+    font-size: 72px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+.only-text p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    width: 1070px;
+    padding:0 0 70px 270px;
 }
