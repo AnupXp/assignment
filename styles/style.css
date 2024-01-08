@@ -188,6 +188,7 @@ body{
     padding: 0 135px 0 120px;
 }
 .only-text{
+    width: 1600px;
     text-align: center;
 }
 .only-text h4{
@@ -214,6 +215,9 @@ body{
 }
 .some-text{
     margin: 0 140px;
+    width: 1320px;
+    width: 100%;
+
 }
 .some-text>h4{
     color: #F00;
@@ -280,7 +284,6 @@ body{
     padding: 25px 265px 25px 30px;
     border: none;
     border-radius: 50px 0 0 50px;
-    margin-right: 0;
 }
 #search-button .button{
     border: none;
@@ -290,5 +293,58 @@ body{
     color: #FFF;
     font-size: 15px;
     font-weight: 600;
-    margin-left: 0;
+}
+/* footer section related */
+footer{
+    background-color: #070211;
+    width: 1600px;
+    height: 610px;
+}
+#loc-info{
+    display: flex;
+    justify-content: space-between;
+}
+#loc-info .loc-text , .phone-web span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+#loc-info .loc-text{
+    padding: 120px 50px 50px 140px;
+}
+#loc-info .phone-web{
+    padding: 120px 275px 50px 50px;
+}
+#loc-info .phone-web a{
+    text-decoration: none;
+}
+.phone-web span{
+    padding-left: 15px;
+}
+.socials a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin:0 10px ;
+}
+.socials{
+    margin: 50px 625px;
+}
+#finished{
+    display: flex;
+    justify-content: space-between;
+}
+#finished p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+#finished .copy-rights{
+    margin: 50px 0 120px 140px;
+}
+#finished .unsubscribe{
+    margin: 50px 140px 120px 0;
 }
